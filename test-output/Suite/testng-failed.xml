@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test chrome(failed)">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="com.Test.VerrifyLoginTest">
+        <methods>
+          <include name="verify_TC_001_loginwithvalidcredential"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="Initiolizationsetup"/>
+        </methods>
+      </class> <!-- com.Test.VerrifyLoginTest -->
+    </classes>
+  </test> <!-- Test chrome(failed) -->
+  <test thread-count="5" name="Test edge(failed)">
+    <parameter name="BrowserName" value="edge"/>
+    <classes>
+      <class name="com.Test.VerrifyLoginTest">
+        <methods>
+          <include name="verify_TC_001_loginwithvalidcredential"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="Initiolizationsetup"/>
+        </methods>
+      </class> <!-- com.Test.VerrifyLoginTest -->
+    </classes>
+  </test> <!-- Test edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
